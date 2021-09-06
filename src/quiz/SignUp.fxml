@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="321.0" prefWidth="442.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="quiz.commonService.CommonServiceimpl">
+   <children>
+      <Label layoutX="172.0" layoutY="29.0" prefHeight="38.0" prefWidth="111.0" text="회원가입 " textFill="#231616">
+         <font>
+            <Font name="Leelawadee UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="89.0" text="이  름" />
+      <Label layoutX="213.0" layoutY="170.0" prefHeight="14.0" prefWidth="96.0" text="패스워드 확인" />
+      <Label layoutX="5.0" layoutY="170.0" prefHeight="14.0" prefWidth="58.0" text="패스워드" />
+      <Label layoutX="243.0" layoutY="89.0" prefHeight="14.0" prefWidth="58.0" text="아 이 디 " />
+      <TextField fx:id="fxName" layoutX="58.0" layoutY="85.0" prefHeight="22.0" prefWidth="139.0" />
+      <TextField fx:id="fxPwChk" layoutX="289.0" layoutY="166.0" prefHeight="22.0" prefWidth="139.0" />
+      <TextField fx:id="fxId" layoutX="289.0" layoutY="85.0" prefHeight="22.0" prefWidth="139.0" />
+      <TextField fx:id="fxPw" layoutX="58.0" layoutY="166.0" prefHeight="22.0" prefWidth="139.0" />
+      <Label layoutX="50.0" layoutY="212.0" text="성별" />
+      <Label layoutX="50.0" layoutY="249.0" text="취미" />
+      <Label layoutX="236.0" layoutY="212.0" prefHeight="14.0" prefWidth="67.0" text="인원구분" />
+      <CheckBox fx:id="chkMusic" layoutX="91.0" layoutY="248.0" mnemonicParsing="false" text="음악" />
+      <CheckBox fx:id="chkMovie" layoutX="283.0" layoutY="248.0" mnemonicParsing="false" text="영화" />
+      <CheckBox fx:id="chkSport" layoutX="177.0" layoutY="248.0" mnemonicParsing="false" text="스포츠" />
+      <RadioButton fx:id="rdoMan" layoutX="91.0" layoutY="211.0" mnemonicParsing="false" text="남성">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoWoman" layoutX="177.0" layoutY="211.0" mnemonicParsing="false" text="여성" toggleGroup="$gender" />
+      <ComboBox fx:id="cmbAge" layoutX="289.0" layoutY="208.0" prefWidth="150.0" />
+      <Button layoutX="88.0" layoutY="284.0" mnemonicParsing="false" onAction="#SingUp" prefHeight="22.0" prefWidth="103.0" text="회원가입" />
+      <Button layoutX="237.0" layoutY="284.0" mnemonicParsing="false" onAction="#memberCancle" prefHeight="22.0" prefWidth="103.0" text="취소" />
+   </children>
+</AnchorPane>
